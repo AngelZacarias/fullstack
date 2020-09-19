@@ -10,9 +10,9 @@ app.set("Port", 4000);
 
 //It will be used to get data about the request made and duration
 app.use(morgan("dev"));
-
-//app.use(bodyParser.urlencoded({extend:true}));
-//app.use(bodyParser.json());
+app.use(cors());
+app.use(bodyParser.urlencoded({ extend: true }));
+app.use(bodyParser.json());
 
 //:::::::::::::::::::::: Routes ::::::::::::::::::::
 app.use("/api/", require("./routes/prueba.route"));
