@@ -4,7 +4,13 @@ const User = require("../models/user");
 
 //Methods
 pruebaCtrl.getData = (req, res) => {
-  send("working");
+  User.find()
+  .then(users=>{
+    res.json({users})
+  })
+  .catch(err=>{
+    console.log(err)
+  })
 };
 
 pruebaCtrl.create = async (req, res) => {

@@ -1,7 +1,7 @@
 //Mongoose to manage the database conection
 const mongoose = require("mongoose");
 //URI to db, created if it doesnt exist
-URI = "mongodb://localhost/ensayo";
+URI = "mongodb://localhost/registro_empleados";
 
 //We  try to connect
 mongoose
